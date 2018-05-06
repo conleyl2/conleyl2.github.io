@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather API Project Homepage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#">Weather API Project<br> <font size= 1>by Liliana Conley</font></a>
+          </div>
+    
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="homepage.html">Homepage</a></li>
+              <li class="dropdown">
+                <a class="active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="latvscloud.html">City Latitude vs Cloudiness</a></li>
+                  <li><a href="latvshumid.html">City Latitude vs Humidity</a></li>
+                  <li><a href="latvstemp.html">City Latitude vs Temperature</a></li>
+                  <li><a href="latvswind.html">City Latitude vs Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparisons</a></li>
+              <li><a href="#">Data</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+<center><h2>City Latitude vs Cloudiness</h2></center>
+<img src="conleyl2.github.io/images/latvscloud.html"></img>
+<br>
+<p>
+    In this visualization we see a comparison of the cloudiness when compared to the latitude of a city. This is all based off of data 
+    pulled on 3/26/2018 off of the Weather OWM API using a random sample of cities.
+</p>
+
+</body>
+</html>

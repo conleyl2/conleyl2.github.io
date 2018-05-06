@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather API Project Homepage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#">Weather API Project<br> <font size= 1>by Liliana Conley</font></a>
+          </div>
+    
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="homepage.html">Homepage</a></li>
+              <li class="dropdown">
+                <a class="active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="latvscloud.html">City Latitude vs Cloudiness</a></li>
+                    <li><a href="latvshumid.html">City Latitude vs Humidity</a></li>
+                    <li><a href="latvstemp.html">City Latitude vs Temperature</a></li>
+                    <li><a href="latvswind.html">City Latitude vs Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Comparisons</a></li>
+              <li><a href="#">Data</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <center><h2>Project Synopsis</h2></center> 
+    <hr>
+    <br>
+    <p>
+        This is a breakdown of my findings in doing my web API homework. You'll find links to each of my visualizations
+        along with a link to a comparison sheet and a link to some of the code behind the data I pulled.
+        If you have any questions about what you're seeing please feel free to reach out to me at conleyl2@outlook.com. 
+        Thanks and have a good day.
+    </p>    
+    <hr>
+    <center><h2>Project Directions</h2></center>  
+    <hr>
+    <br>
+    <p>
+        Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's take what you've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
+<br>
+Now, we know what you may be thinking: _"Duh. It gets hotter..."_ 
+<br>
+But, if pressed, how would you **prove** it? 
+<br>
+## WeatherPy
+<br>
+In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and a little common sense to create a representative model of weather across world cities.
+<br>
+Your objective is to build a series of scatter plots to showcase the following relationships:
+<br>
+<ul>
+<li>Temperature (F) vs. Latitude</li>
+<li>Humidity (%) vs. Latitude</li>
+<li>Cloudiness (%) vs. Latitude</li>
+<li>Wind Speed (mph) vs. Latitude</li>
+</ul>
+<br>
+Your final notebook must:
+<br>
+<ul>
+<li>Randomly select **at least** 500 unique (non-repeat) cities based on latitude and longitude.</li>
+<li>Perform a weather check on each of the cities using a series of successive API calls. </li>
+<li>Include a print log of each city as it's being processed with the city number, city name, and requested URL.</li>
+<li>Save both a CSV of all data retrieved and png images for each scatter plot.</li>
+</ul>
+<br>
+As final considerations:
+<br>
+<ul>
+<li>You must use the Matplotlib and Seaborn libraries.</li>
+<li>You must include a written description of three observable trends based on the data. </li>
+<li>You must use proper labeling of your plots, including aspects like: Plot Titles (with date of analysis) and Axes Labels.</li>
+<li>You must include an exported markdown version of your Notebook called  `README.md` in your GitHub repository.  </li>
+<li>See [Example Solution](WeatherPy_Example.pdf) for a reference on expected format. </li>
+</ul>
+    </p>   
+</body>
+</html>
